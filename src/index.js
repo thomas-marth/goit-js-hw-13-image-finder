@@ -25,7 +25,7 @@ function onImagesSearch(event) {
   apiService.query = event.currentTarget.elements.query.value;
   if (!event.currentTarget.elements.query.value) {
     info({
-      title: 'Write something for search',
+      title: 'Введите поисковый запрос',
     });
   } else if (event.currentTarget.elements.query.value) {
     apiService.resetPage();
